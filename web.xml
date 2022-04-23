@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Student_Detail</display-name>
+  
+  <servlet>
+  <servlet-name>s1</servlet-name>
+  <servlet-class>com.bce.JSP.DateFind</servlet-class>
+  </servlet>
+  <servlet-mapping>
+<servlet-name>s1</servlet-name>
+<url-pattern>/drink/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>s2</servlet-name>
+  <servlet-class>com.bce.Servlet.DateApplication</servlet-class>
+  </servlet>
+  <servlet-mapping>
+<servlet-name>s2</servlet-name>
+<url-pattern>/satyajeet/*</url-pattern>
+
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>html1</servlet-name>
+  <servlet-class>com.bce.JSP.HtmlServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+<servlet-name>html1</servlet-name>
+<url-pattern>/drink2/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>word1</servlet-name>
+  <servlet-class>com.bce.JSP.WordServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+<servlet-name>word1</servlet-name>
+<url-pattern>/drink1/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>excel1</servlet-name>
+  <servlet-class>com.bce.JSP.ExcelServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+<servlet-name>excel1</servlet-name>
+<url-pattern>/drink3/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>xml1</servlet-name>
+  <servlet-class>com.bce.JSP.XmlServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+<servlet-name>xml1</servlet-name>
+<url-pattern>/drink4/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>wish</servlet-name>
+  <servlet-class>com.bce.JSP.WishApp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+<servlet-name>wish</servlet-name>
+<url-pattern>/drink123/*</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>vote</servlet-name>
+  <servlet-class>com.bce.JSP.VoterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+<servlet-name>vote</servlet-name>
+<url-pattern>/drink1234/*</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>marrage</servlet-name>
+  <servlet-class>com.bce.JSP.MarrageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+<servlet-name>marrage</servlet-name>
+<url-pattern>/drink12344/*</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>studentRegistationform</servlet-name>
+  <servlet-class>com.bce.JSP.StusentRegistationForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+<servlet-name>studentRegistationform</servlet-name>
+<url-pattern>/h/*</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>abc</servlet-name>
+  <servlet-class>com.bce.JSP.DBServlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+<servlet-name>abc</servlet-name>
+<url-pattern>/dburl/</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+  <servlet-name>DB</servlet-name>
+  <servlet-class>com.bce.JSP.DB2Servlet</servlet-class>
+ 
+   <init-param>
+         <param-name>driver</param-name>
+         <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+     </init-param>
+  
+  <init-param>
+         <param-name>dburl</param-name>
+         <param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+     </init-param>
+  
+  <init-param>
+         <param-name>dbusere</param-name>
+         <param-value>saka</param-value>
+     </init-param>
+  
+  <init-param>
+         <param-name>dbpwd</param-name>
+         <param-value>saka</param-value>
+     </init-param>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+<servlet-name>DB</servlet-name>
+<url-pattern>/dburl/*</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>country</servlet-name>
+  <servlet-class>com.bce.JSP.CountryServlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+<servlet-name>country</servlet-name>
+<url-pattern>/country/</url-pattern>
+</servlet-mapping>
+
+<context-param>
+<param-name>driver</param-name>
+<param-value> oracle.jdbc.driver.OracleDriver</param-value>
+</context-param>
+
+
+<context-param>
+<param-name>dburl</param-name>
+<param-value> jdbc:oracle:thin:@localhost:1521:orc</param-value>
+</context-param>
+
+
+<context-param>
+<param-name>dbuser</param-name>
+<param-value> acott</param-value>
+</context-param>
+
+<context-param>
+<param-name>dbpwd</param-name>
+<param-value> saka</param-value>
+</context-param>
+
+<servlet>
+  <servlet-name>DBS</servlet-name>
+  <servlet-class>com.bce.JSP.DB3Servlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+<servlet-name>DBS</servlet-name>
+<url-pattern>/dburl/</url-pattern>
+</servlet-mapping>
+ <display-name>PoolApp</display-name>
+    
+<welcome-file-list>
+   <welcome-file>DBInput.html</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+   
+    
+  </welcome-file-list>
+
+
+<servlet>
+  <servlet-name>pool</servlet-name>
+  <servlet-class>com.bce.JSP.ConnectionPoolServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+<servlet-name>pool</servlet-name>
+<url-pattern>/poolurl</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+
+
+  
+</web-app>
